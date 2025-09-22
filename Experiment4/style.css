@@ -1,0 +1,98 @@
+/* i. SIMPLE SELECTORS */
+
+/* Element selector */
+p {
+    color: green;
+}
+
+/* ID selector */
+#special {
+    color: blue;
+    font-weight: bold;
+}
+
+/* Class selector */
+.highlight {
+    background-color: yellow;
+}
+
+/* Group selector */
+h1, h2, h3 {
+    color: red;
+}
+
+/* Universal selector */
+* {
+    font-family: Arial, sans-serif;
+}
+
+/*  ii. COMBINATOR SELECTORS */
+
+/* Descendant selector */
+div p {
+    font-style: italic;
+}
+
+/* Child selector */
+div > p {
+    color: purple;
+}
+
+/* Adjacent sibling selector */
+h2 + p {
+    background-color: lightgray;
+}
+
+/* General sibling selector */
+h2 ~ p {
+    border: 1px dashed orange;
+}
+
+/* iii. PSEUDO-CLASS SELECTORS */
+
+/* Hover effect on links */
+a:hover {
+    color: red;
+}
+
+/* Input focus */
+input:focus {
+    border: 2px solid blue;
+}
+
+/* First and last child in a list */
+li:first-child {
+    color: brown;
+}
+
+li:last-child {
+    color: darkgreen;
+}
+
+/*  iv. PSEUDO-ELEMENT SELECTORS */
+
+
+/* First line and first letter */
+p::first-line {
+    font-weight: bold;
+}
+
+p::first-letter {
+    font-size: 24px;
+    color: navy;
+}
+
+/* v. ATTRIBUTE SELECTORS */
+
+input[type="text"] {
+    background-color: lightyellow;
+}
+
+input[type="password"] {
+    background-color: lightpink;
+}
+
+a[target="_blank"] {
+    text-decoration: none;
+    color: green;
+}
