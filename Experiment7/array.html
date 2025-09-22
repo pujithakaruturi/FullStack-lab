@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Array Object Example</title>
+    <script>
+        function arrayDemo() {
+            let fruits = ["Apple", "Banana", "Mango"];
+            fruits.push("Orange"); // add element
+            fruits.pop();          // remove last element
+            document.getElementById("arrayDemo").innerHTML =
+                "Array Length: " + fruits.length + "<br>" +
+                "Fruits: " + fruits.join(", ");
+        }
+    </script>
+</head>
+<body>
+    <h1>Array Object Example</h1>
+    <button onclick="arrayDemo()">Show Array Demo</button>
+    <p id="arrayDemo"></p>
+</body>
+</html>

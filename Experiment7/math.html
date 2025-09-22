@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Math Object Example</title>
+    <script>
+        function mathDemo() {
+            let num = 9.7;
+            document.getElementById("mathDemo").innerHTML =
+                "Number: " + num + "<br>" +
+                "Math.round: " + Math.round(num) + "<br>" +
+                "Math.floor: " + Math.floor(num) + "<br>" +
+                "Math.ceil: " + Math.ceil(num) + "<br>" +
+                "Math.sqrt(16): " + Math.sqrt(16) + "<br>" +
+                "Math.random(): " + Math.random();
+        }
+    </script>
+</head>
+<body>
+    <h1>Math Object Example</h1>
+    <button onclick="mathDemo()">Show Math Demo</button>
+    <p id="mathDemo"></p>
+</body>
+</html>

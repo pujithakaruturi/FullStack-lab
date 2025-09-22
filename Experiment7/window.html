@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Window Object Example</title>
+    <script>
+        function showWindowInfo() {
+            alert("Window height: " + window.innerHeight);
+            alert("Window width: " + window.innerWidth);
+            if (confirm("Do you want to open a new window?")) {
+                window.open("https://www.google.com", "_blank", "width=400,height=400");
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Window Object Example</h1>
+    <button onclick="showWindowInfo()">Show Window Info</button>
+</body>
+</html>

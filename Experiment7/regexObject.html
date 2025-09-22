@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Regex Object Example</title>
+    <script>
+        function regexDemo() {
+            let pattern = /JavaScript/i; // case-insensitive
+            let text = "I love JavaScript and javascript is fun!";
+            document.getElementById("regexDemo").innerHTML =
+                "Test: " + pattern.test(text) + "<br>" +   // returns true/false
+                "Match: " + text.match(pattern);           // returns matched text
+        }
+    </script>
+</head>
+<body>
+    <h1>Regex Object Example</h1>
+    <button onclick="regexDemo()">Show Regex Demo</button>
+    <p id="regexDemo"></p>
+</body>
+</html>

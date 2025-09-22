@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document Object Example</title>
+    <script>
+        function showDocumentInfo() {
+            alert("Title of the page: " + document.title);
+            alert("URL of the page: " + document.URL);
+            document.getElementById("docDemo").innerHTML = 
+                "Number of paragraphs: " + document.getElementsByTagName("p").length;
+        }
+    </script>
+</head>
+<body>
+    <h1>Document Object Example</h1>
+    <p>Paragraph 1</p>
+    <p>Paragraph 2</p>
+    <button onclick="showDocumentInfo()">Show Document Info</button>
+    <p id="docDemo"></p>
+</body>
+</html>
