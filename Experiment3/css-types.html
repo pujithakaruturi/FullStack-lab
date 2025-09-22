@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Types of CSS</title>
+
+    <!-- Internal CSS -->
+    <style>
+        h1 {
+            color: blue;          /* selector: h1, property: color, value: blue */
+            text-align: center;
+        }
+        p {
+            font-size: 18px;
+            color: green;
+        }
+    </style>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Inline CSS -->
+    <h1 style="color: red;">This is Inline CSS Example</h1>
+
+    <p>This is styled with Internal CSS (green text).</p>
+
+    <div class="external-style">
+        This is styled with External CSS (purple box).
+    </div>
+</body>
+</html>
