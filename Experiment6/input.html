@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS Input Methods</title>
+    <script>
+        function takeInput() {
+            // Using prompt
+            let name = prompt("Enter your name:");
+
+            // Using form input
+            let age = document.getElementById("age").value;
+
+            // Using confirm
+            let confirmCheck = confirm("Are you sure about your input?");
+
+            document.getElementById("output").innerHTML = 
+                "Name: " + name + "<br>Age: " + age + "<br>Confirmed: " + confirmCheck;
+        }
+    </script>
+</head>
+<body>
+    <h1>JavaScript Input Methods</h1>
+
+    <label>Age:</label>
+    <input type="number" id="age"><br><br>
+
+    <button onclick="takeInput()">Submit</button>
+
+    <p id="output"></p>
+</body>
+</html>

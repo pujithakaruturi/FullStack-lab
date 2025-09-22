@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS Output Methods</title>
+    <script>
+        function showOutput() {
+            // Using alert
+            alert("This is an alert box.");
+
+            // Using document.write
+            document.write("<p>This is displayed using document.write.</p>");
+
+            // Using innerHTML
+            document.getElementById("demo").innerHTML = "This is displayed using innerHTML.";
+
+            // Using console.log
+            console.log("This is displayed in the console.");
+        }
+    </script>
+</head>
+<body>
+    <h1>JavaScript Output Methods</h1>
+    <button onclick="showOutput()">Show Output</button>
+    <p id="demo"></p>
+</body>
+</html>
